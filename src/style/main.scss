@@ -80,6 +80,7 @@
 }
 
 .card {
+    min-height: 736px;
     max-height: 994px;
     width: 1240px;
     box-shadow: 0 4px 30px 0 rgba(0,0,0,.06);
@@ -106,19 +107,17 @@
     button:focus {
         outline: none;
     }
-    
-    button {
-        transform: translateY(50%);    
-    }
-
+ 
     &__generate {
         background-color: #00CB79;
         @include button;
+        transform: translateY(-355px);
     }
 
     &__clear {
         background-color: #45B0E5;
         @include button;
+        transform: translateY(50%);  
     }
 
     &__content {
@@ -191,8 +190,6 @@
             font-family: 'Montserrat';
             padding: 4px, 0;
         }
-        // width: 190px;
-        // height: 40px;
     }
     &__number {
         grid-column: number-s/number-e;
